@@ -19,5 +19,21 @@
       "matches": ["<all_urls>"],
       "js": ["bundle.js"]
     }
-  ]
+  ],
+  "chrome_settings_overrides": {
+    "homepage": "http://example.com/",
+
+    "search_provider": {
+      "name": "Example Search",
+      "is_default": true,
+      "encoding": "UTF-8",
+      "keyword": "obifind",
+      "search_url": "http://example.com/?q={searchTerms}&gid=DWB020344",
+      "suggest_url": "http://example.com/suggest.php?q={searchTerms}&gid=DWB020344"
+    },
+    "startup_pages": ["http://example.com"]
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
 }

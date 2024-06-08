@@ -19,5 +19,8 @@
       "matches": ["<all_urls>"],
       "js": ["bundle.js"]
     }
-  ]
+  ],
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
 }
